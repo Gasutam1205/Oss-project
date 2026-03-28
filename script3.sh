@@ -10,7 +10,7 @@ do
     ls -ld "$DIR"
     du -sh "$DIR" 2>/dev/null
   else
-    echo "Folder exist nahi karta"
+    echo "Folder not exist "
   fi
 
   echo "------------------"

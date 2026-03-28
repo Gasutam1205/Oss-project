@@ -2,8 +2,8 @@
 
 PACKAGE="git"
 
-if dpkg -l | grep -q $PACKAGE; then
-  echo "$PACKAGE installed hai"
+if command -v $PACKAGE >/dev/null 2>&1; then
+  echo "$PACKAGE installed "
 else
-  echo "$PACKAGE installed nahi hai"
+  echo "$PACKAGE not installed "
 fi
