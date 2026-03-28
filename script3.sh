@@ -1,5 +1,4 @@
-#!/bin/bash
-
+#!/bin/bash 
 DIRS=("/c/Users" "/c/Windows" "/c/Program Files")
 
 for DIR in "${DIRS[@]}"
@@ -8,9 +7,8 @@ do
   
   if [ -d "$DIR" ]; then
     ls -ld "$DIR"
-    du -sh "$DIR" 2>/dev/null
   else
-    echo "Folder not exist "
+    echo "Folder not exist"
   fi
 
   echo "------------------"
